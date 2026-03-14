@@ -28,8 +28,3 @@ class HousingApp:
         self.output.insert(1.0, f"MSE: {self.predictor.metrics['mse']:.4f}\n")
         self.output.insert(1.0, f"RMSE: {self.predictor.metrics['rmse']:.4f}\n")
         self.output.insert(1.0, f"R²: {self.predictor.metrics['r2']:.4f}\n")
-
-
-root = tk.Tk()
-app = HousingApp(root)
-root.mainloop()
